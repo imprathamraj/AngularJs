@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet],
@@ -10,4 +9,10 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'Hello from BridgeLabz.';
   imgUrl = "../assets/images/BL_logo_square_jpg.jpg";
+  url = "https://www.bridgelabz.com/experienced-engineers";
+
+  onClick(){
+    console.log("Save button is clicked");
+    window.open(this.url,"_blank");
+    }
 }

@@ -39,13 +39,13 @@
   <div class="content">
     <div class="left-side">
       <h1>{{ title }}</h1>
-      <p>Congratulations! UC2 is running. 🎉</p>
+      <p>Congratulations! UC3 is running. 🎉</p>
     </div>
-  </div>
-  <div>
-    <img [src] = "imgUrl"
-      alt="The BridgeLabz logo: a Bridge to Employement tgrough a Lab Works."/>
-      
+    <div>
+      <img [src] = "imgUrl" (click)="onClick()"
+        alt="The BridgeLabz logo: A Bridge to Employement tgrough a Lab Works."
+      />
+    </div>
   </div>
 </main>
 <router-outlet />
