@@ -34,18 +34,24 @@
   .content p {
     margin-top: 1.5rem;
   }
+  .content img {
+    width: 30%;
+    min-height: 30%;
+    padding: 0.5rem; 
+  }
 </style>
 <main class="main">
   <div class="content">
     <div class="left-side">
-      <h1>{{ title }}</h1>
-      <p>Congratulations! UC2 is running. 🎉</p>
+      <h1>Hello {{this.userName}} from BridgeLabz</h1>
+      <p>Congratulations! UC4 is running. 🎉</p>
     </div>
-  </div>
-  <div>
-    <img [src] = "imgUrl"
-      alt="The BridgeLabz logo: a Bridge to Employement tgrough a Lab Works."/>
-      
+    <div class="logo">
+      <img [src] = "imgUrl" (click)="onClick()"alt="The BridgeLabz logo: A Bridge to Employement through a Lab Works."/>
+    </div>
+    <div>
+      <input [(ngModel)]="userName"/> <br/><br/>
+    </div>
   </div>
 </main>
 <router-outlet />
